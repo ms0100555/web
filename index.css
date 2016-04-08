@@ -1,0 +1,376 @@
+
+
+body{
+	max-width: 100%;
+	margin: 0;
+	
+}
+
+.topline{
+	display: block;
+	height: 130px;
+	background-color: #70493D;
+	border-bottom: 1px solid #000;
+}
+
+.topline input { 
+	padding: 5px 15px;
+	border: 0;
+	font-size: 16px;
+	height: 80px;
+	margin-right: 5px;
+	margin-top: 15px;
+	background-repeat: no-repeat; 
+}
+
+.topbtn .btn1{
+	display: inline-block;
+	background-image:url("btn1.jpg");
+	background-repeat: no-repeat;
+	width: 100px;
+	height:100px;
+}
+.topbtn .btn2{
+	display: inline-block;
+	background-image:url("btn2.jpg");
+	background-repeat: no-repeat;
+	width: 94px;
+	height:100px;
+}
+.topbtn .btn3{
+	display: inline-block;
+	background-image:url("btn3.jpg");
+	background-repeat: no-repeat;
+	width: 90px;
+	height:100px;
+}
+
+.dropdown-menu{
+
+	
+}
+h1{
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 30px;
+    width:300px;
+    height:130px;
+    line-height: 130px;
+    font-size: 60px;
+    font-weight: normal;
+    color: #FFF;
+    
+}
+.topline .topbtn{
+	float: right;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+
+.nav-tabs {
+	height: 150px;
+}
+.topline2 {
+	border-bottom: 1px solid #CDC5B9;
+	height: 160px;
+}
+.topline2 ul{
+	background-color:#E0D4C8;
+}
+
+.topline2 li{
+	width: 25%;
+	height: 150px;
+}
+.topline2 a{
+	display: inline-block;
+	border:0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	height: 160px;
+	background-color:#E0D4C8;
+}
+.topline2 a:hover{
+
+	background-color:#E0D4C8;
+}
+.topline2 img {
+	display: inline-block;
+	width: 100%;
+	height: 160px;
+	margin-top: -11px;
+
+}
+
+.page2{
+
+	height: 900px;
+}
+
+.friends,.talk{
+	height: 160px;
+	background-color:#F1EDE4;
+	border-bottom: 1px solid #EDE8E5;
+
+}
+.friends .photo,.talk .photo{
+	display: inline-block;
+	width: 200px;
+	height: 140px;
+	padding:10px 40px;
+}
+.friends img,.talk img{
+	/*display: inline-block;*/
+	border-radius: 50%;
+	height: 140px;
+	
+}
+
+.friends .content,.talk .content{
+	padding-top:10px;
+
+}
+.friends .modal-body{
+	height: 660px !important;
+}
+
+
+.friends .modal-body .photo{
+	width: 100%;
+	height: 300px;
+	background-image: url("http://farm8.staticflickr.com/7244/7195625944_5a47ddbbef_b.jpg");
+	text-align:center;
+}
+
+.friends .modal-body .photo img{
+	display: inline-block;
+	height: 200px;
+	border-radius: 50%;
+	margin-top: 180px;
+
+}
+
+.friends .modal-body .content{
+	text-align:center;
+	padding-top: 110px;
+	height: 200px;
+}
+
+.friends .modal-body .content .name{
+
+	font-size: 50px;
+	color: #0F1E78;
+}
+
+.friends .modal-body .content .description{
+	font-size: 36px;
+	color: #6C6C6C;
+}
+.modal-footer{
+
+	height: 150px;
+}
+.modal-footer .options .col-xs-4{
+
+	text-align: center;
+}
+
+.modal-footer .options img{
+	margin-top: 10px;
+	border-radius: 0%;
+	height: 80px;
+}
+
+
+
+.friends .name,.talk .name{
+	/*display: inline-block;*/
+	/*height: 80px;*/
+	font-size: 50px;
+	color:#866C60;
+	font-weight: normal;
+	
+}
+
+.description{
+	/*display: inline-block;*/
+	height: 60px;
+	font-size: 46px;
+	color:#C5BAB6;
+	font-weight: normal;
+	
+}
+.dynamic{
+	height:5000px;
+	background-color: #F1EDE4;
+	padding: 0px 15px;
+}
+
+.board{
+
+	height: 2050px;
+	background-color: #FFF;
+	border-radius: 1%;
+	margin-top: 20px; 
+}
+.board .photo{
+
+	height: 120px;
+	width: 120px;
+}
+
+
+.board .photo img{
+	
+	height: 120px;
+	border-radius: 50%;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+
+.board .name{
+	margin-top: 60px;
+	margin-left: 50px;
+	font-size: 46px;
+	color: #735246;
+}
+
+.board .time{
+	margin-top: 10px;
+	margin-left: 50px;
+	font-size: 30px;
+	color: #99999F;
+}
+
+.board .picture{
+
+	margin-top: 25px;
+}
+
+.board img{
+
+	width: 100%;
+}
+
+.board .content{
+
+	font-size:20px; 
+	padding: 30px;
+}
+
+.board .like,.board .message{
+	display: inline-block;
+	font-size: 30px;
+	margin-left: 20px;
+	color: #C5BAB6;
+}
+
+.board .message{
+
+	margin-left: 20px;
+}
+
+.extra{
+	padding: 0;
+	/*width: 100%;*/
+	height: 1100px;
+	background-color: #F1EDE4;
+}
+
+.extra img{
+	
+	width: 325px;
+}
+
+.talkin{
+
+	background-color: #F1EDE2;
+	height: 1250px;
+}
+
+.ui-content {
+
+	padding: 0px;
+
+}
+.talkin .photo {
+
+	height: 120px;
+	width: 120px;
+}
+
+
+.talkin img{
+
+	display: inline-block;
+	height: 120px;
+	border-radius: 50%;
+	margin-top:20px;
+	
+}
+
+.talkin .col-xs-2{
+
+	height: 140px;
+	text-align: center;
+}
+.talkin .col-xs-8{
+
+	height: 140px;
+	padding:35px 0;
+}
+
+.talkin .col-xs-10{
+
+	height: 140px;
+}
+
+.talkin .time{
+	display:inline-block;
+	float: left;
+	height: 80px;
+	margin-left: 10px;
+	padding-top: 10px;
+	font-size: 26px;
+	font-weight:bold;
+	color: #70493D;
+}
+.talkin .content{
+	display: inline-block;
+	float: left;
+}
+
+.talkin .content,.talkin .mycontent{
+
+	display:inline-block;
+	background-color: #FFF;
+	border: 3px solid #B7A89A;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 42px;
+	
+}
+
+.mycontent {
+
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
