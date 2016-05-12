@@ -6,5 +6,5 @@ global $db;
 // 			array( PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'" )
 // 			);
 $db = new PDO(
-			'mysql:host=localhost;dbname=bahamuter;charset=utf8', 'ms0100555', 'fjfe6060'
+			'mysql:host=localhost;dbname=LINE;charset=utf8', 'ms0100555', 'fjfe6060'
 			);

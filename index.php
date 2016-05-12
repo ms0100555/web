@@ -5,12 +5,11 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta name="viewport" content="user-scalable=0">   <!-- 限制無法縮放 -->
 	<meta name="viewport" content="user-scalable=no">  <!-- 限制無法縮放 --> 
 
@@ -69,8 +68,8 @@
 							</button> -->
 
 							<!-- Modal -->
-							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
- 								<div class="modal-dialog modal-lg">
+							<div id="modal1" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+ 								<div  class="modal-dialog modal-lg">
  									<div class="modal-content">
  										
  										<div class="modal-body">
@@ -88,7 +87,7 @@
  										<div class="modal-footer">
  											<div class="options">
  							       					<div class="col-xs-4">
-                                                        <a href="#pagetwo">
+                                                        <a href="#pagetwo" onclick="javascript:hidemodal()">
                                                             <img src="fr_icon1.png">
                                                         </a>	
  							       					</div>
@@ -106,8 +105,6 @@
  									</div>
  								</div>
 							</div>
-
-
     					</div>  <!--結尾--> 
     				</div>
     			</div>
@@ -116,7 +113,7 @@
                 
                 <div class="col-xs-12">
                     <div class="talk">
-                    <a href="#pagetwo" data-transition="fade" onclick="javascript:nowtime()">
+                    <a href="#pagetwo" data-transition="fade">
                         
                         <div class="col-xs-3">
                             <div class="photo"><img src="http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf"></div>
@@ -201,8 +198,14 @@
                     
                         
                     <div class="col-xs-12">
-                        <div class="topline">
-                            <h1>SixWong</h1>
+                        <div class="topline123">
+                            <div class="col-xs-8">
+                                <h1>SixWong</h1>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="radio" name="userradio" id="he" value="he"><h2>對方</h2>
+                                <input type="radio" name="userradio" id="me" value="me" CHECKED ><h2>自己</h2>
+                            </div>
                         </div>
                     </div>
 
@@ -212,72 +215,71 @@
                                 <img src="http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf">
                             </div>
 
-                            <div class="col-xs-8">
-                                <div class="test">
-                                    <div class="content">
+                            <div class="col-xs-10">
+                                <div class="content">
+                                    <div class="hemsg">
                                     HELLO!
                                     </div>
-                                </div>
-                                
-                                <div class="time">
-                                    <p>已讀<br>上午9:10</p>
-                                </div>
-                                
+                                    <div class="time">
+                                        <p><br>上午9:10</p>
+                                    </div>
+                                 </div>
                             </div>
 
-                            <div class="col-xs-2">
-                                    
+                            <div class="col-xs-12">
+                                <div class="msgall">
+                                    <div class="mycontent">
+                                    你好!
+                                    </div>
+                                </div> 
                             </div>
 
-                            <div class="col-xs-2">
-                                   
+                             <div class="col-xs-2">
+                                <img src="http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf">
                             </div>
 
                             <div class="col-xs-10">
-                                <div class="mycontent">
-                                    你好!
-                                </div>
-                            </div>
-
-                            
-
-                             <div class="col-xs-2">
-                                <img src="http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf">
-                            </div>
-                            <div class="col-xs-8">
                                 <div class="content">
-                                    最近天氣好冷...
+                                    <div class="hemsg">
+                                        最近天氣好冷...
+                                    </div>
+                                    <div class="time">
+                                        <p><br>上午9:10</p>
+                                    </div>
                                 </div>
-
-                                <div class="time">
-                                    <p>已讀<br>上午9:10</p>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-2">
                             </div>
 
                              <div class="col-xs-2">
                                 <img src="http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf">
                             </div>
 
-                            <div class="col-xs-8">
+                            <div class="col-xs-10">
                                 <div class="content">
-                                    聽說最低會到6度................123
+                                    <div class="hemsg">
+                                        聽說最低會到6度................123
+                                    </div>
+                                    <div class="time">
+                                        <p id="nowtime"></p>
+                                    </div>
                                 </div>
-
-                                <div class="time">
-                                    <p id="nowtime"></p>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-2">
-      
                             </div>
                         </div>    
                     </div>
 
-                    <div class="col-xs-12"><input type="button" id="btn1" value="點我一下"></div>
+                    <div id="foot" ></div>
+                    <div class="col-xs-12">
+                        <div class="dialogbar">
+                            <div class="txt">
+                                <input type="text" id="Dialog" >
+                            </div>
+
+                            <div class="btntest">
+                                <button id="sendbtn" class="btn btn-default">傳送</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
 </div>
             
 
@@ -285,14 +287,16 @@
 // $(document).ready(function(){
 //     nowtime ();
 // });
+var sender = "me";
 
-function nowtime () {
-    var dt = new Date();
-    var hour = dt.getHours();
-    var min = dt.getMinutes();
+function nowtime () { //取得目前時間
+    var dt = new Date(); //將 dt 宣告成Date
+    var hour = dt.getHours(); //取得目前 小時
+    var min = dt.getMinutes(); //取得目前 分鐘
 
-    var datetime;
-
+    var datetime; 
+    //↓↓↓↓↓↓↓↓↓↓↓↓↓↓判斷時間↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    
     if (hour>=12) {
         
         datetime = "下午";
@@ -312,131 +316,132 @@ function nowtime () {
 
         min = "0"+min;
     };
-    var nowtime = "已讀<br>"+datetime+" "+hour+":"+min;
-        document.getElementById('nowtime').innerHTML = nowtime;
-    // document.write(nowtime);
+     var nowtime = datetime+" "+hour+":"+min; 
+     return nowtime; //回傳字串
 }
     
     function changetofriend(){
 
-        document.getElementById('toptitle').innerHTML = "好友";
+        document.getElementById('toptitle').innerHTML = "好友"; //更改 id = toptitle 的內容為 好友
     }
 
     function changetotalk(){
 
-        document.getElementById('toptitle').innerHTML = "聊天";
+        document.getElementById('toptitle').innerHTML = "聊天"; //更改 id = toptitle 的內容為 聊天
     }
 
     function changetodynamic(){
 
-        document.getElementById('toptitle').innerHTML = "動態消息";
+        document.getElementById('toptitle').innerHTML = "動態消息"; //更改 id = toptitle 的內容為 動態消息
     }
 
     function changetoextra(){
 
-        document.getElementById('toptitle').innerHTML = "其他";
+        document.getElementById('toptitle').innerHTML = "其他"; //更改 id = toptitle 的內容為 其他
     }
 
+    function hidemodal(){ //將model 隱藏
+ 
+        $('#modal1').modal('hide'); //將id = modal1 的 model 隱藏
 
+    }
+
+    function tobuttom(){
+        var height  = $(".talkin").outerHeight(true);  //取得 class = talkin 的視窗高度 true = 包含 top&bottom 的margin
+        window.scrollTo(0,height); //將視窗移動至 X:0 Y:height(talkin的視窗高度)
+        
+    }
+    
 //---------------JQuery---------------- 
 
 $(document).ready(function(){
 
-    var OBJ = { msg :[{msg:'測試！測試！',readTime:'下午 10:23',read:true},
-                      {msg:'應該有看到吧！',readTime:'下午10:25',read:true}]
-            };
-    // var msg = [{'msg':'測試！測試！','time':'下午 10:23'},
-                      // {'msg':'應該有看到吧！','time':'下午10:25'}];
+    $("#me").focusin(function(){ //調整目前發送訊息的人為 "自己" NO.1
 
-    
-    function talk(){
+        sender = "me";
+        console.log(sender);
+    });
 
-        var a1 = "最近天氣好冷...";
+     $("#he").focusin(function(){ //調整目前發送訊息的人為 "對方" NO.1
 
-        var b1 = "已讀";
-
-        var c1 = "上午9:10";
-
-        // $(".talkin").append("<div class='col-xs-2'>"++
-        //                         "<img src='http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf'>"++
-        //                     "</div>"+""+
-        //                     "<div class='col-xs-8'>"++
-        //                         "<div class='content'>"++
-        //                             +a1+
-        //                         '</div>'++
-
-        //                         '<div class="time">'++
-        //                             '<p>'+b1+'<br>'+c1+'</p>'++
-        //                         '</div>'++
-        //                     '</div>'++
-
-        //                     '<div class="col-xs-2">'++
-        //                     '</div>');
-
-        // for(var key in OBJ){
-
-        //     a1 = OBJ[key][0];
-        //     // c1 = OBJ.msg[time];
-        // }
-        var i=0;
-        console.log(OBJ.msg);
-        for(var i=0;i<OBJ.msg.length ;i++)
-        {
-            addMsg(OBJ.msg[i]);
-        }
+        sender = "he";
+        console.log(sender);
         
-        var newMsg={msg:'QQ',readTime:'test',read:true};
-        OBJ.msg.push(newMsg);
-        addMsg(newMsg);
+    });
+    $("#sendbtn").click(function(){ //當按下 id = sendbtn 的物件時... NO.2
 
-        // $.each(OBJ.msg, function(key,value) {
-           
-        //     $(".talkin").append("<div class='col-xs-2'><img src='http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf'></div>"
-        
-        //                     +"<div class='col-xs-8'><div class='content'>"+a1+"</div>"
-
-        //                     +"<div class='time'><p>"+b1+"<br>"+c1+"</p></div></div>"
-
-        //                     +"<div class='col-xs-2'></div>"
-        //                     );
-
-        // });
-
-        // $(".talkin").append("<div class='col-xs-2'><img src='http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf'></div>"
-        
-        //                     +"<div class='col-xs-8'><div class='content'>"+a1+"</div>"
-
-        //                     +"<div class='time'><p>"+b1+"<br>"+c1+"</p></div></div>"
-
-        //                     +"<div class='col-xs-2'></div>"
-        //                     );
-
-
-
-        // document.write("出來了...");
-    }
-
-    function addMsg(newMsg){
-        var readStr=newMsg.read?"已讀":"未讀";
-
-        $(".talkin").append("<div class='col-xs-2'><img src='http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf'></div>"
-        
-                            +"<div class='col-xs-8'><div class='content'>"+newMsg.msg+"</div>"
-
-                            +"<div class='time'><p>"+readStr+"<br>"+newMsg.readTime+"</p></div></div>"
-
-                            +"<div class='col-xs-2'></div>"
-                            );
-    }
-
-    $("#btn1").click(function(){
-
-        // document.write("出來了...");
-        talk();
+        var msg = document.getElementById('Dialog').value; //接收 輸入框 訊息
+        sendmsg(msg); //呼叫sendmsg()方法
+        document.getElementById('Dialog').value = ""; // 將輸入框改成空白
 
     });
-});
+    
+    function sendmsg(msg){ //發送訊息 NO.3
+            var ntime = nowtime();
+            if (sender=="me" && msg!="") {
 
+                var newMsg={msg:msg,readTime:ntime,alreadyread:""};
+                iaddMsg(newMsg);
+
+                $.ajax({  // ajax 連接資料庫
+                    type: 'POST', // 傳送方式
+                    url: 'sendmsg.php',     //傳送網址
+                    data: newMsg,   //傳送資料 格式一 {msg:msg,readTime:ntime}
+                    dataType: 'text', //回傳的資料格式
+                    success: function (msg_result) { //成功的話回傳 msg_reslut (名稱自訂)
+                        alert("傳送成功");
+                        // console.log( msg_result );
+                        
+                    }, 
+                    error: function(jqXHR, textStatus, errorThrown) {alert(errorThrown)}, //失敗的話...
+                });
+
+            }
+
+            if(sender == "he" && msg!=""){
+                var newMsg={msg:msg,readTime:ntime};
+                headdMsg(newMsg);
+
+                $.ajax({  // ajax 連接資料庫
+                    type: 'POST', // 傳送方式
+                    url: 'sendmsg.php',     //傳送網址
+                    data: newMsg,   //傳送資料
+                    dataType: 'text', // 回傳的資料格式
+                    success: function (data) //成功的話回傳 (data)
+                    {
+                        console.log(data);
+                        alert("OK");
+                    }, 
+                    error: function(jqXHR, textStatus, errorThrown) {alert("fail")}, //失敗的話...
+                });
+
+
+            }
+    }
+
+    function headdMsg(newMsg){ //對方新增訊息（增加程式碼）完成發送 NO.4 
+        
+
+        $(".talkin").append("<div class='col-xs-2'><img src='http://cdn-obs.line-apps.com/line/r/lineq/c/685005d1-8942-486f-a309-25bbc189dee6d71a95t02134b23/200x200.rf'></div>" //加入圖片
+        //加入程式碼至 id =  talkin 裡面
+                            +"<div class='col-xs-10'><div class='content'><div class='hemsg'>"+newMsg.msg+"</div>" //取得newMsg Object 的msg內容 
+
+                            +"<div class='time'><p>"+newMsg.readTime+"</p></div></div></div>" //取得newMsg Object 的readTime內容 
+                            
+                            );
+        tobuttom(); //呼叫將視窗往下移的方法
+    }
+
+    function iaddMsg(newMsg){ //自己新增訊息（增加程式碼）完成發送 NO.4
+ 
+        $(".talkin").append("<div class='col-xs-12'><div class='msgall'><div class='mytime'>"+newMsg.readTime+"</div><div class='mycontent'>"+newMsg.msg+"</div></div></div></div>"
+        
+                            );
+        tobuttom(); //呼叫將視窗往下移的方法
+    }
+    
+    
+});
 </script>   
                
 </div>
